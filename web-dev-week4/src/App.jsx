@@ -59,10 +59,14 @@ function App() {
       </div>
 
       <div className="w-full bg-slate-200 pt-5 pl-10">
-        <Text>Riwayat Organisasi:</Text>
-
-        <ItemList>Informatics Student Union (2023 - now)</ItemList>
-        <ItemList>High School Student Council (2021 - 2022)</ItemList>
+        <Accordion width="500px">
+          <AccordionItem title={"Riwayat Organisasi"} description={
+            <>
+              <ItemList>Informatics Student Union (2023 - now)</ItemList>
+              <ItemList>High School Student Council (2021 - 2022)</ItemList>
+            </>}
+          />
+        </Accordion>
 
         <div className="h-20" />
       </div>
